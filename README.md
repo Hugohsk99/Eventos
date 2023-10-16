@@ -45,8 +45,8 @@ psql -U hugo -d bancoapi
 ├── package.json
 ├── package-lock.json
 ├── postman
-│   ├── RESTful_API_Boilerplate.postman_collection.json
-│   └── RESTful_API_Boilerplate.postman_environment.json
+│   ├── RESTful_API_eventos.postman_collection.json
+│   └── RESTful_API_eventos.postman_environment.json
 ├── README.md
 ├── renovate.json
 ├── scripts

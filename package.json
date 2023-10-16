@@ -1,7 +1,7 @@
 {
-  "name": "express-typescript-typeorm-boilerplate",
+  "name": "express-typescript-typeorm-eventos",
   "version": "1.0.0",
-  "description": "RESTful API boilerplate with Typescript, TypeORM, ExpressJs & Mocha.",
+  "description": "RESTful API eventos with Typescript, TypeORM, ExpressJs & Mocha.",
   "scripts": {
     "dev": "debug=* NODE_PATH=./src ts-node-dev --respawn ./src/index.ts",
     "build": "rimraf dist && tsc",

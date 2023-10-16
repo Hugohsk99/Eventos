@@ -2,7 +2,7 @@ version: '3'
 
 services:
   db_postgres:
-    container_name: 'db_boilerplate'
+    container_name: 'db_eventos'
     image: 'postgres:14.2-alpine'
     restart: always
     environment:
@@ -12,9 +12,9 @@ services:
     ports:
       - '5435:5432'
     volumes:
-      - ./database/boilerplate:/var/lib/postgresql/data/
+      - ./database/eventos:/var/lib/postgresql/data/
 
-  be_boilerplate:
+  be_eventos:
     entrypoint: /bin/sh './scripts/be-node-dev.sh'
     env_file:
       - .env
@@ -25,8 +25,8 @@ services:
     links:
       - db_postgres
 
-  be_boilerplate_test:
-    container_name: 'be_boilerplate_test'
+  be_eventos_test:
+    container_name: 'be_eventos_test'
     command: sh -c "echo 'Test container ready' && tail -f /dev/null"
     build: .
     stdin_open: true
@@ -41,8 +41,8 @@ services:
       - .:/app/
       - /app/node_modules
 
-  fe_boilerplate:
-    container_name: 'fe_boilerplate'
+  fe_eventos:
+    container_name: 'fe_eventos'
     build:
       context: ./frontend  
       dockerfile: Dockerfile  

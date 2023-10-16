@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  be_boilerplate:
-    container_name: 'be_boilerplate'
+  be_eventos:
+    container_name: 'be_eventos'
     build: .
     restart: always
     volumes:
