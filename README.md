@@ -13,6 +13,10 @@ chmod +x install.sh
  npm run docker:dev
 
 psql -U hugo -d bancoapi
+![image](https://github.com/Hugohsk99/Eventos/assets/68088380/8c93092f-c953-4a0a-9979-9aa1d7b63703)
+
+![image](https://github.com/Hugohsk99/Eventos/assets/68088380/78e5fde6-337f-4e5c-92f2-8d8c82a5c9c0)
+
 
 ├── config
 ├── database
